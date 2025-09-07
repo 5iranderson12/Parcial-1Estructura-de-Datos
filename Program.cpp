@@ -6,7 +6,7 @@
 #include <iterator>
 
 int main() {
-    // Autoevaluación y nombre completo
+    // Autoevaluación y nombre
     std::cout << "=== PARCIAL 1 - MANEJO DE ESTRUCTURAS DE DATOS ===" << std::endl;
     std::cout << "Nombre completo: Anderson Saul Maravilla Callejas" << std::endl;
     std::cout << "Autoevaluacion: 10/10" << std::endl;
@@ -33,12 +33,12 @@ int main() {
     float suma = 0.0f;
     
     for (int i = 0; i < numDias; i++) {
-        std::cout << "Dia " << (i + 1) << ": " << *(ptr + i) << "°C" << std::endl;
+        std::cout << "Dia " << (i + 1) << ": " << *(ptr + i) << "C" << std::endl;
         suma += *(ptr + i);
     }
     
     float promedio = suma / numDias;
-    std::cout << "Temperatura promedio: " << promedio << "°C" << std::endl << std::endl;
+    std::cout << "Temperatura promedio: " << promedio << "C" << std::endl << std::endl;
     
     // 3. Buscar una temperatura específica
     float tempBuscada;
@@ -57,9 +57,9 @@ int main() {
     }
     
     if (encontrada) {
-        std::cout << "Temperatura " << tempBuscada << "°C encontrada en el dia " << (posicion + 1) << std::endl;
+        std::cout << "Temperatura " << tempBuscada << "C encontrada en el dia " << (posicion + 1) << std::endl;
     } else {
-        std::cout << "La temperatura " << tempBuscada << "°C no existe en el registro." << std::endl;
+        std::cout << "La temperatura " << tempBuscada << "C no existe en el registro." << std::endl;
     }
     std::cout << std::endl;
     
@@ -69,7 +69,7 @@ int main() {
     std::sort(temperaturasOrdenadas.begin(), temperaturasOrdenadas.end());
     
     for (size_t i = 0; i < temperaturasOrdenadas.size(); i++) {
-        std::cout << temperaturasOrdenadas[i] << "°C ";
+        std::cout << temperaturasOrdenadas[i] << "C ";
     }
     std::cout << std::endl << std::endl;
     
